@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepClear Dynamics | InnoChamp 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lexend:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .font-lexend {
+            font-family: 'Lexend', sans-serif;
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #60a5fa, #f87171);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background: radial-gradient(circle at top right, #1e3a8a 0%, #0f172a 100%);
+        }
+        .phase-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .copy-protection {
+            user-select: none;
+            -webkit-user-select: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 copy-protection">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                    <i class="fas fa-microscope text-white text-xl"></i>
+                </div>
+                <span class="text-2xl font-extrabold tracking-tight text-white font-lexend uppercase">DEEPCLEAR <span class="text-blue-500 text-sm align-top">TM</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest">
+                <a href="#about" class="hover:text-blue-400 transition">Solution</a>
+                <a href="#phases" class="hover:text-blue-400 transition">Phases</a>
+                <a href="#tech" class="hover:text-blue-400 transition">Hardware</a>
+            </div>
+            <button class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-full font-bold transition text-white text-sm">
+                InnoChamp 2026
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 px-6 hero-bg overflow-hidden min-h-screen flex items-center">
+        <div class="absolute inset-0 opacity-20 pointer-events-none">
+            <div class="absolute top-20 left-10 w-96 h-96 bg-blue-500 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-red-500 rounded-full blur-[120px]"></div>
+        </div>
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="bg-blue-900/50 text-blue-300 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block border border-blue-700">InnoChamp 2026 Original Concept</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight text-white">
+                    Targeting Cancer <br><span class="gradient-text">At the Source.</span>
+                </h1>
+                <p class="text-xl text-slate-400 mb-8 max-w-lg leading-relaxed">
+                    A proprietary localized triple-threat therapy using precision thermal cycling and targeted biological agents.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#phases" class="bg-white text-slate-950 px-8 py-3 rounded-xl font-bold hover:bg-blue-50 transition">The Treatment</a>
+                    <a href="#tech" class="border border-slate-700 px-8 py-3 rounded-xl font-bold hover:bg-slate-800 transition flex items-center">
+                        <i class="fas fa-microchip mr-2 text-blue-400"></i> Original Tech
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="glass p-8 rounded-3xl border border-slate-700 relative z-10">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-xs font-bold uppercase text-slate-500">Active Treatment Session</span>
+                        <span class="flex items-center text-green-400 text-xs font-bold"><i class="fas fa-circle mr-2 text-[8px] animate-pulse"></i> CIRCULATING</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800">
+                            <div class="flex justify-between text-xs mb-2">
+                                <span class="uppercase tracking-widest text-slate-400">Chamber Temp</span>
+                                <span class="text-blue-400 font-bold">45.0°C</span>
+                            </div>
+                            <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
+                                <div class="bg-blue-500 h-full w-[100%]"></div>
+                            </div>
+                        </div>
+                        <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800">
+                            <div class="flex justify-between text-xs mb-2 text-slate-400 uppercase tracking-widest">
+                                <span>Security ID</span>
+                                <span>DC-ORIGINAL-2026</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Why Localized? -->
+    <section id="about" class="py-24 px-6 bg-slate-950">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl md:text-5xl font-bold mb-16 font-lexend">Proprietary Solution</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-3xl glass border border-slate-800">
+                    <div class="w-16 h-16 bg-red-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-red-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Patient-Centric Isolation</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">Our unique isolation loop ensures toxic agents never leave the tumor environment, a novel approach to zero-systemic damage.</p>
+                </div>
+                <div class="p-8 rounded-3xl glass border border-slate-800">
+                    <div class="w-16 h-16 bg-blue-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-fingerprint text-blue-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Unique Triple Attack</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">DeepClear is the first concept to combine thermal cycling, anti-angiogenesis, and Salmonella-based immunotherapy in one hardware loop.</p>
+                </div>
+                <div class="p-8 rounded-3xl glass border border-slate-800">
+                    <div class="w-16 h-16 bg-green-500/10 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-lock text-green-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">IP Protected Design</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">All hardware diagrams and biological protocols are the intellectual property of DeepClear Dynamics for InnoChamp 2026.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 3 Phases -->
+    <section id="phases" class="py-24 px-6 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold font-lexend mb-4">Original Triple-Action Protocol</h2>
+                <p class="text-slate-400">A revolutionary phased medical approach protected by originality copyrights.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Phase 1 -->
+                <div class="phase-card p-10 rounded-[2.5rem] bg-gradient-to-br from-blue-900/20 to-slate-900 border border-blue-500/20">
+                    <span class="text-6xl font-black text-blue-500/10 block mb-4">01</span>
+                    <h3 class="text-2xl font-bold text-blue-400 mb-4">Thermal Flagging</h3>
+                    <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                        Continuous blood circulation at 45°C through a 12-cycle loop—our signature method for weakening tumor structures.
+                    </p>
+                </div>
+
+                <!-- Phase 2 -->
+                <div class="phase-card p-10 rounded-[2.5rem] bg-gradient-to-br from-red-900/20 to-slate-900 border border-red-500/20">
+                    <span class="text-6xl font-black text-red-500/10 block mb-4">02</span>
+                    <h3 class="text-2xl font-bold text-red-400 mb-4">Shield-Breaking</h3>
+                    <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                        Geldanamycin and Bevacizumab are delivered via our precision hardware to strip cancer of its biological protections.
+                    </p>
+                </div>
+
+                <!-- Phase 3 -->
+                <div class="phase-card p-10 rounded-[2.5rem] bg-gradient-to-br from-purple-900/20 to-slate-900 border border-purple-500/20">
+                    <span class="text-6xl font-black text-purple-500/10 block mb-4">03</span>
+                    <h3 class="text-2xl font-bold text-purple-400 mb-4">Biological Invasion</h3>
+                    <p class="text-slate-400 mb-6 text-sm leading-relaxed">
+                        The "Trojan Horse" phase uses attenuated Salmonella to infiltrate the core, a unique concept for InnoChamp 2026.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specs -->
+    <section id="tech" class="py-24 px-6 bg-slate-950">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8 font-lexend">Hardware Integrity</h2>
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-12 h-12 glass rounded-xl flex items-center justify-center border border-slate-700">
+                                <i class="fas fa-copyright text-blue-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Non-Replicable Loop Design</h4>
+                                <p class="text-slate-400 text-sm">The 12-cycle back-and-forth circulation chamber is an original engineering feat designed to maximize thermal lethality.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <div class="flex-shrink-0 w-12 h-12 glass rounded-xl flex items-center justify-center border border-slate-700">
+                                <i class="fas fa-file-signature text-blue-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Confidential Medical Protocol</h4>
+                                <p class="text-slate-400 text-sm">The specific sequencing of biological agents within the hardware loop is confidential intellectual property.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-8 glass rounded-3xl border border-blue-500/30">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-user-shield mr-3 text-blue-500"></i> NOTICE OF ORIGINALITY
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+                        This project is an original innovation by <span class="text-white font-bold">Sabareesh S</span>. 
+                        The concept of <strong>"DeepClear Dynamics"</strong>, its hardware architecture, and the three-phase biological attack logic are presented for evaluation at <span class="text-blue-400">InnoChamp 2026</span>. 
+                    </p>
+                    <div class="bg-blue-600/20 p-4 rounded-xl border border-blue-500/50 text-xs text-blue-200">
+                        <i class="fas fa-info-circle mr-2"></i> Reproduction or copying of this concept without credit is strictly prohibited.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="flex items-center justify-center space-x-2 mb-8">
+                <div class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center">
+                    <i class="fas fa-microscope text-white text-sm"></i>
+                </div>
+                <span class="text-xl font-extrabold tracking-tight text-white font-lexend uppercase">DeepClear Dynamics</span>
+            </div>
+            <p class="text-slate-500 text-sm max-w-xl mx-auto mb-6 leading-relaxed">
+                Innovation by <span class="text-blue-400 font-semibold">Sabareesh S</span>, 7th Grade, Reeds World School. <br>
+                Project Showcase: <span class="text-white font-bold">InnoChamp 2026</span>
+            </p>
+            <div class="inline-block px-4 py-2 border border-slate-800 rounded-full text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-10">
+                <i class="fas fa-shield-virus mr-2"></i> ALL RIGHTS RESERVED | ORIGINAL WORK 2026
+            </div>
+            <div class="text-slate-600 text-[9px] uppercase tracking-[0.2em]">
+                &copy; 2026 Sabareesh S | Reeds World School | Do Not Copy
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Prevention of easy copying
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.onkeydown = function(e) {
+            if(e.keyCode == 123) return false;
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) return false;
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) return false;
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) return false;
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) return false;
+        }
+    </script>
+</body>
+</html>
